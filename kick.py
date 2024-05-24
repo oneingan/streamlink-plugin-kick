@@ -110,7 +110,7 @@ class KICK(Plugin):
         )
 
         try:
-            scraper = cloudscraper.create_scraper()
+            scraper = cloudscraper.create_scraper(interpreter='nodejs')
             res = scraper.get(
                 "{0}/{1}/{2}".format(
                     API_BASE_URL,
